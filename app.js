@@ -3,7 +3,7 @@ const Bot = require('messenger-bot')
 const process = require('process')
 
 let bot = new Bot({
-  token: '<Page Access Token>',
+  token: '<e4a443b04630dce25a7b0922b24cb1fb82d8304d>',
   verify: '<Verify>',
   app_secret: '<App secret>'
 })
