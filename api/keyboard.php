@@ -1,4 +1,5 @@
 # keyboard.php
+curl -XGET 'https://:your_server_url/keyboard'
  router.get('/keyboard', (req, res) => {
   const menu = {
       type: 'buttons',
