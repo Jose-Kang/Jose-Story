@@ -1,12 +1,11 @@
 # keyboard.php
- 
-<?php
- 
-echo <<< EOD
-{
-    "type" : "buttons",
-    "buttons" : ["시작하기", "도움말"]
-}
-EOD;
- 
-?>
+ router.get('/keyboard', (req, res) => {
+  const menu = {
+      type: 'buttons',
+      buttons: ["메뉴1", "메뉴2", "메뉴3"]
+  };
+
+  res.set({
+      'content-type': 'application/json'
+  }).send(JSON.stringify(menu));
+});
